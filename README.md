@@ -1,7 +1,5 @@
 # Fibonacci-function-on-FPGA
 
-## Fibonacci function
-
 The Fibonacci function is defined as
 
 ![image](https://user-images.githubusercontent.com/117464811/232430447-f4d76269-09cf-4a13-9502-365223babefe.png)
