@@ -67,29 +67,32 @@ Since the whole output series is relatively long, here we skip to the end of the
 
 ### post-synthesis
 
-post-synthesis functional simulation:
+![2_1](https://github.com/HuaYuXiao/Fibonacci-function-on-FPGA/assets/117464811/138ba9e7-5d60-466d-9189-eacef9a72232 "post-synthesis functional simulation")
 
+![2_2](https://github.com/HuaYuXiao/Fibonacci-function-on-FPGA/assets/117464811/8aea7834-d356-4496-bd0a-56d5823a4729 "post-synthesis timing simulation")
 
+Something unexpected happen when the output switches, probably because of the delay.
 
-post-synthesis timing simulation:
-
-
-
+![2_3](https://github.com/HuaYuXiao/Fibonacci-function-on-FPGA/assets/117464811/916ad707-8c5f-45f9-8145-78148532924f)
 
 ### post-implementation
 
+![3_1](https://github.com/HuaYuXiao/Fibonacci-function-on-FPGA/assets/117464811/bf980599-de1b-4255-8209-ab1497f5d208 "post-implementation functional simulation")
 
+The timing simulation result is similar to that of synthesis.
 
-In this project, we use registers to store the first two items of the Fibonacci sequence and calculate the next term through combinatorial logic. However, combinatorial logic consumes a lot of resources and takes up a lot of LUT resources in FPGAs, resulting in poor scalability of the design.
-
-To optimize this problem, sharing on a repetitive-addition adder can be used. This method can use the DSP block in the FPGA to realize the multiplexing of the adder, thereby greatly improving the computational efficiency.
-
-By adopting this approach, the amount of combinatorial logic can be reduced, thereby saving LUT resources in the FPGA, and the DSP block can be used to implement efficient adders and improve computational efficiency. This approach can greatly improve the computational speed of Fibonacci sequences and improve the scalability of the design.
+![3_2](https://github.com/HuaYuXiao/Fibonacci-function-on-FPGA/assets/117464811/a3b4568f-7fce-4b71-8014-34e5ec317b2b "post-implementation timing simulation")
 
 ## implementation
 
 Implement this function on the FPGA board. You may design the input/output interfaces.
 
-## Conclusion
+## Analysis
 
+In this project, we use registers to store the first two items of the Fibonacci sequence and calculate the next term through combinatorial logic. However, combinatorial logic consumes a lot of resources and takes up a lot of LUT resources in FPGAs, resulting in poor scalability of the design.
 
+![image](https://github.com/HuaYuXiao/Fibonacci-function-on-FPGA/assets/117464811/b5839b95-36f6-4342-9772-9ff3b1301dd4)
+
+To optimize this problem, sharing on a repetitive-addition adder can be used. This method can use the DSP block in the FPGA to realize the multiplexing of the adder, thereby greatly improving the computational efficiency.
+
+By adopting this approach, the amount of combinatorial logic can be reduced, thereby saving LUT resources in the FPGA, and the DSP block can be used to implement efficient adders and improve computational efficiency. This approach can greatly improve the computational speed of Fibonacci sequences and improve the scalability of the design.
