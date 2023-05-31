@@ -1,5 +1,9 @@
 # Fibonacci-function-on-FPGA
 
+12010508 Yuxiao Hua
+
+In this project, we are going to conduct simulation of Fibonacci function in Vivado and implement it on FPGA board.
+
 The Fibonacci function is defined as
 
 ![image](https://user-images.githubusercontent.com/117464811/232430447-f4d76269-09cf-4a13-9502-365223babefe.png)
