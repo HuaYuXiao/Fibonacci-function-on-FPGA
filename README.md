@@ -55,12 +55,30 @@ Develop the VHDL code in two-segment style. Simulate the VHDL model.
 
 ### behavioral
 
+The result of behavioral simulation is as expected.
+
+![1_1](https://github.com/HuaYuXiao/Fibonacci-function-on-FPGA/assets/117464811/85538985-adcd-4b3e-859e-f95e76e07021)
+
+![1_2](https://github.com/HuaYuXiao/Fibonacci-function-on-FPGA/assets/117464811/c45a14d2-af28-469d-a2f6-058a5bf3d9b2)
+
+Since the whole output series is relatively long, here we skip to the end of the output.
+
+![1_4](https://github.com/HuaYuXiao/Fibonacci-function-on-FPGA/assets/117464811/c78b545d-62b8-4cbd-a64e-3f44f7baddec)
+
 ### post-synthesis
+
+post-synthesis functional simulation:
+
+
+
+post-synthesis timing simulation:
+
+
 
 
 ### post-implementation
 
-Analyze the timing of the circuit.
+
 
 In this project, we use registers to store the first two items of the Fibonacci sequence and calculate the next term through combinatorial logic. However, combinatorial logic consumes a lot of resources and takes up a lot of LUT resources in FPGAs, resulting in poor scalability of the design.
 
@@ -71,4 +89,7 @@ By adopting this approach, the amount of combinatorial logic can be reduced, the
 ## implementation
 
 Implement this function on the FPGA board. You may design the input/output interfaces.
+
+## Conclusion
+
 
