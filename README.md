@@ -100,3 +100,12 @@ In this project, we use registers to store the first two items of the Fibonacci 
 To optimize this problem, sharing on a repetitive-addition adder can be used. This method can use the DSP block in the FPGA to realize the multiplexing of the adder, thereby greatly improving the computational efficiency.
 
 By adopting this approach, the amount of combinatorial logic can be reduced, thereby saving LUT resources in the FPGA, and the DSP block can be used to implement efficient adders and improve computational efficiency. This approach can greatly improve the computational speed of Fibonacci sequences and improve the scalability of the design.
+
+## Conclusion
+
+This project aims to implement Fibonacci function, for a given 6-bit binary input, output the corresponding Fibonacci sequence, and display it in hexadecimal form on the seven-segment digital tube on the FPGA.
+
+First, we create a process for clocking and resetting to ensure that all registers are cleared at system startup, as well as operations when the clock is on the rising edge. Second, we create a process to process the signal of the binary input, and a process to calculate the Fibonacci sequence and store it in the registers. Finally, we create a process to convert the output binary number to decimal 16 and display it on a sevensegment
+digital tube.
+
+In this project, we learned the basics of the VHDL language, such as processes, signals, registers, etc., as well as the basic flow of implementing digital circuits on FPGAs. In addition, we learned how to validate a design using a simulator and how to load a design onto real hardware for testing using an FPGA development board. Through the practice of this project, we not only consolidated the basic knowledge of VHDL language, but also understood the design and implementation process of digital circuits, especially the whole structure and principle of FSMD.
